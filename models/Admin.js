@@ -10,7 +10,7 @@ const adminSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  tokens: [{type:Object}]
+  tokens: [{ type: Object }],
 });
 
 const Admin = mongoose.model("admin", adminSchema);

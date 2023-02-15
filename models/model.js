@@ -22,7 +22,7 @@ const employeeSchema = new mongoose.Schema({
   account: {
     required: true,
     type: String,
-  }
+  },
 });
 
 module.exports = mongoose.model("Data", employeeSchema);

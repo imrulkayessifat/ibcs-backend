@@ -11,10 +11,12 @@ const bankSchema = new mongoose.Schema({
   medicalallowance: {
     type: Number,
   },
-  details:[{
-    type:mongoose.Schema.Types.ObjectId,
-    ref:Model
-  }]
+  details: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: Model,
+    },
+  ],
 });
 
 module.exports = mongoose.model("Bank", bankSchema);
